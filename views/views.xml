@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    
+    <record model="ir.ui.view" id="vit_inherit_attribute_mobile">
+      <field name="name">vit_inherit_attribute_mobile</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_partner_form"/>
+      
+      <field name="arch" type="xml">
+        <field name="mobile" position="attributes">
+          <attribute name="required">1</attribute>
+        </field>
+      </field>
+    </record>
+    
+  </data>
+</odoo>
